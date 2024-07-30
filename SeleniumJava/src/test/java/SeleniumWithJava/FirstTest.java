@@ -32,6 +32,8 @@ public class FirstTest {
 //       act.click(driver.findElement(By.id("all_setup_home")));
 //       act.perform();
 //       driver.close();
+       w.until(ExpectedConditions.presenceOfElementLocated(By.className("setupGear")));
+       driver.findElement(By.className("setupGear")).click();
        
 	}
 
